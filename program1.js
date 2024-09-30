@@ -14,6 +14,9 @@ var isValid = function(s) {
         if (char === '(' || char === "{" || char === "[") {
             stack.push(char);
         }
+        else {
+            if(stack.length === 0 || stack.pop() !== bktMap)
+        }
     }
 };
 
