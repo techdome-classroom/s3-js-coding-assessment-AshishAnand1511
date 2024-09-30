@@ -8,8 +8,9 @@ var isValid = function(s) {
     const bktMap = {
         ")": "(",
         "}": "{",
-        ']':"["
-    }
+        ']': "["
+    };
+    
 };
 
 module.exports = { isValid };
