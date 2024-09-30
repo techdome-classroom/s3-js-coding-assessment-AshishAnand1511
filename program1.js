@@ -10,7 +10,9 @@ var isValid = function(s) {
         "}": "{",
         ']': "["
     };
-    
+    for (let char of s) {
+        if(char === '(' || char ==="{" || char === "[")
+    }
 };
 
 module.exports = { isValid };
