@@ -15,7 +15,9 @@ var isValid = function(s) {
             stack.push(char);
         }
         else {
-            if(stack.length === 0 || stack.pop() !== bktMap)
+            if (stack.length === 0 || stack.pop() !== bktMap) {
+                return false
+            }
         }
     }
 };
