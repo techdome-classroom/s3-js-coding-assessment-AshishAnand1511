@@ -2,7 +2,7 @@
  * @param {string} s
  * @return {number}
  */
-var romanToInt = function(s) {
+var romanToInt = function (s) {
     const romanMap = {
         'I': 1,
         'V': 5,
@@ -13,7 +13,7 @@ var romanToInt = function(s) {
         'M': 1000
     };
     let total = 0;
-    for (let i = 0; i < s.length; i++){
+    for (let i = 0; i < s.length; i++) {
         const currentVal = romanMap[s[i]];
         const nextVal = romanMap[s[i + 1]];
         if (nextVal && currentVal < nextVal) {
@@ -26,4 +26,4 @@ var romanToInt = function(s) {
 };
 
 
-module.exports={romanToInt}
+module.exports = { romanToInt }
